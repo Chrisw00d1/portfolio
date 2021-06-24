@@ -1,0 +1,23 @@
+span {
+  position: fixed;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  z-index: 0;
+  background-color: rgba(249, 237, 237, 0.618);
+  top: 0;
+  animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(0) translateY(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) translateY(100vh);
+  }
+}

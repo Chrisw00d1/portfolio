@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+* {
+  font-family: 'Oxygen', sans-serif;
+}
+
+html, body, div {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.overall {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+
+}
+
+
+
+.title {
+  transition: all .5s ease-in-out;
+  font-size: 30px;
+  background-color: #151515d9;
+  backdrop-filter: blur(4px);
+  width: 100%;
+  height: auto;
+  color: whitesmoke;
+  border-bottom: solid 5px whitesmoke;
+  padding: 10px;
+  padding-left: 50px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.noOpen {
+  font-size: 50px;
+}
+
+
+
+@import 
+'background',
+'about',
+'skills',
+'projects'
