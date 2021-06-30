@@ -1,20 +1,28 @@
 .about {
-  margin-top: -300px;
-  width: 50%;
-  height: 50%;
+  margin-top: -225px;
+  width: 60%;
+  height: 60%;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
   background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(3px);
   color: whitesmoke;
   overflow: visible;
   z-index: 1;
-  h2 {
-    margin-top: 0px;
-    font-size: 40px;
+  img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
   }
-  p {
+  .aboutText {
+    overflow: visible;
+    height: 100%;
+    width: 50%;
     text-align: center;
+    h2 {
+      margin-top: 0px;
+      font-size: 40px;
+    }
   }
 }

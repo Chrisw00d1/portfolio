@@ -34,7 +34,7 @@ const projectData = [
     projectName: 'R8 my Pl8 M8',
     images: [r8mypl81, r8mypl82, r8mypl83],
     skills: ['devicon-html5-plain', 'devicon-css3-plain', 'devicon-javascript-plain', 'devicon-react-original', 'devicon-nodejs-plain', 'devicon-mongodb-plain', 'devicon-express-original', 'devicon-sass-original', 'devicon-bulma-plain', 'devicon-git-plain', 'devicon-github-original', 'devicon-heroku-original'],
-    links: ['https://github.com/Chrisw00d1/project-3-client', '']
+    links: ['https://github.com/Chrisw00d1/project-3-client', 'https://r8-my-pl8.netlify.app/']
 
   },
   {
@@ -43,7 +43,7 @@ const projectData = [
     projectName: 'note-it-down',
     images: [noteitdown1, noteitdown2, noteitdown3],
     skills: ['devicon-html5-plain', 'devicon-css3-plain', 'devicon-javascript-plain', 'devicon-react-original', 'devicon-python-plain', 'devicon-django-plain', 'devicon-postgresql-plain', 'devicon-sass-original', 'devicon-git-plain', 'devicon-github-original', 'devicon-heroku-original', 'devicon-trello-plain'],
-    links: ['', '']
+    links: ['https://github.com/Chrisw00d1/project-4-client', 'https://note-it-down-net.netlify.app/']
 
   }
 ]

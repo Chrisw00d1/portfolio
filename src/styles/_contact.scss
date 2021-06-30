@@ -1,0 +1,30 @@
+.contact {
+  margin-top: -225px;
+  width: 60%;
+  height: 60%;
+  z-index: 1;
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(3px);
+  display: flex;
+  .contactLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40%;
+    height: 100%;
+  }
+  .contactForm {
+    width: 60%;
+    height: 100%;
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 90%;
+      height: 100%;
+    }
+  }
+}
