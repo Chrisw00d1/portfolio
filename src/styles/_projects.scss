@@ -8,13 +8,13 @@
   color: whitesmoke;
   z-index: 1;
   button {
+    position: relative;
     color: whitesmoke;
     cursor: pointer;
     background: none;
     border: none;
     opacity: 0.5;
     transition: all .1s ease-in-out;
-
   }
   button:hover {
     opacity: 1;
@@ -43,7 +43,7 @@ hr {
   width: 80%;
   margin-top: 15px;
   border-radius: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .card {
@@ -71,6 +71,7 @@ hr {
     background-position: center;
     animation: fadeInAndOut 5s ease-in-out;
     border-radius: 20px;
+    object-fit: fill;
   }
 }
 
@@ -94,6 +95,7 @@ hr {
 
 .projectText {
   text-align: center;
+  height: 160px;
 }
 
 .projectLinks {
@@ -118,5 +120,42 @@ hr {
   }
   a:active {
     transform: scale(0.8);
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .card {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .card{
+    justify-content: space-evenly;
+  }
+  .imageContainer {
+    position: absolute;
+    top: 30px;
+    width: 300px;
+    height: 175px;
+  }
+  .nameDiv {
+    overflow: visible;
+    height: 10%;
+    margin-top: 175px;
+  }
+  .projectText, .projectSkills, hr {
+    display: none;
+  }
+  .projects {
+    button {
+      margin-top: 200px;
+    }
+    button:hover {
+      opacity: 0.5;
+      transform: none;
+    }
+    button:active {
+      transform: none;
+    }
   }
 }

@@ -42,7 +42,7 @@ export default function Skills() {
         <small>MongoDB</small>
       </div>
       <div>
-        <i class="devicon-nodejs-plain"></i>
+        <i className="devicon-nodejs-plain"></i>
         <small>nodejs</small>
       </div>
       <div>

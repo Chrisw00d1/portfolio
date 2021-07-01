@@ -2,9 +2,9 @@ export default function Contact() {
   return (
     <div className='contact'>
       <div className='contactLinks'>
-        <a href='https://github.com/Chrisw00d1/' target='_blank' rel='noreferrer'>Github</a>
-        <a href='https://www.linkedin.com/in/christopher-w-802b391ba/' target='_blank' rel='noreferrer'>LinkedIn</a>
-        <p>Email</p>
+        <a href='https://github.com/Chrisw00d1/' target='_blank' rel='noreferrer'><i className="devicon-github-original"></i> <small>github.com/Chrisw00d1/</small></a>
+        <a href='https://www.linkedin.com/in/chrisw00d1/' target='_blank' rel='noreferrer'><i className="devicon-linkedin-plain"></i> <small>linkedin.com/in/chrisw00d1/</small></a>
+        <p><i className="fas fa-envelope"></i> <small>chriswood998@outlook.com</small></p>
       </div>
       <div className='contactForm'>
         <form name='contact' method='post' action='/contact'>

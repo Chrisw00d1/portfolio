@@ -4,8 +4,6 @@
   height: 60%;
   z-index: 1;
   color: whitesmoke;
-  background-color: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(3px);
   display: flex;
   .contactLinks {
     display: flex;
@@ -14,8 +12,32 @@
     justify-content: space-evenly;
     width: 40%;
     height: 100%;
+    background-color: rgba(32, 40, 110, 0.3);
+    backdrop-filter: blur(3px);
+    a {
+      display: flex;
+      align-items: center;
+      width: 60%;
+      color: whitesmoke;
+      text-decoration: none;
+      i {
+        font-size: 30px;
+        margin-right: 10px;
+      }
+    }
+    p {
+      width: 60%;
+      display: flex;
+      align-items: center;
+      i {
+        font-size: 30px;
+        margin-right: 10px;
+      }
+    }
   }
   .contactForm {
+    display: flex;
+    justify-content: center;
     width: 60%;
     height: 100%;
     form {
@@ -23,8 +45,88 @@
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
-      width: 90%;
+      width: 100%;
       height: 100%;
+      background-color: rgba(32, 40, 110, 0.3);
+      backdrop-filter: blur(3px);
+      input {
+        width: 70%;
+        height: 30px;
+        font-size: 20px;
+        padding: 5px;
+        padding-left: 10px;
+        border: none;
+        border-radius: 10px;
+        background-color: rgba(32, 40, 110, 0.3);
+        color: whitesmoke;
+      }
+      textarea {
+        width: 70%;
+        height: 100px;
+        font-size: 20px;
+        padding: 5px;
+        padding-left: 10px;
+        border: none;
+        border-radius: 10px;
+        background-color: rgba(32, 40, 110, 0.3);
+        color: whitesmoke;
+        resize: none;
+      }
+      input:focus, textarea:focus {
+        outline: none;
+      }
+      button {
+        font-size: 20px;
+        padding: 10px;
+        width: 100px;
+        margin-bottom: 5px;
+        background-color: rgba(32, 40, 110, 0.5);
+        color: whitesmoke;
+        border-radius: 15px;
+        border: 2px solid whitesmoke;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+      }
+      button:hover {
+        background-color: rgba(32, 40, 110, 0.8);
+        transform: scale(1.1);
+      }
+      button:active {
+        transform: scale(0.8);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .contact {
+    flex-direction: column;
+    .contactForm {
+      width: auto;
+      height: 80%;
+    }
+    .contactLinks {
+      height: auto;
+      width: 100%;
+      flex-direction: row;
+      justify-content: center;
+      a>small, p>i {
+        display: none;
+      }
+      a, p {
+        justify-content: center;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .contact {
+    width: 100%;
+    .contactLinks>p {
+      font-size: 15px;
+      margin-right: 10px;
     }
   }
 }

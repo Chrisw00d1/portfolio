@@ -4,14 +4,27 @@ import projectData from './data/ProjectData'
 
 export default function Projects() {
   const [count, setCount] = React.useState(0)
+  const [width, setWidth] = React.useState(window.innerWidth)
   const projectsArray = projectData
-  const projectsToRender = [projectsArray[Math.abs(count % projectsArray.length)], projectsArray[Math.abs((count + 1) % projectsArray.length)]]
+  let projectsToRender
+  if (window.innerWidth < 1000) {
+    projectsToRender = [projectsArray[Math.abs(count % projectsArray.length)]]
+  } else {
+    projectsToRender = [projectsArray[Math.abs(count % projectsArray.length)], projectsArray[Math.abs((count + 1) % projectsArray.length)]]
+  }
+  window.addEventListener('resize', () => setWidth(window.innerWidth))
+
+  React.useEffect(() => {
+
+  }, [width])
 
   const handleIncrease = () => {
-    setCount(count + 2)
+    if (width < 1000) setCount(count + 1)
+    else setCount(count + 2)
   }
   const handleDecrease = () => {
-    setCount(count - 2)
+    if (width < 1000) setCount(count - 1)
+    else setCount(count - 2)
   }
   return (
     <div className='projects'>

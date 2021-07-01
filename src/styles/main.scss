@@ -33,6 +33,9 @@ html, body, div {
 
 
 .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: all .5s ease-in-out;
   font-size: 30px;
   background-color: #151515d9;
@@ -42,7 +45,6 @@ html, body, div {
   color: whitesmoke;
   border-bottom: solid 5px whitesmoke;
   padding: 10px;
-  padding-left: 50px;
   cursor: pointer;
   z-index: 1;
 }

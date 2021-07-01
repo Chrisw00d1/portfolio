@@ -28,3 +28,27 @@
     transform: scale(1.2);
   }
 }
+
+@media screen and (max-width: 900px) {
+  .skills {
+    width: 95%;
+    height: 50%;
+    div {
+      width: 20%;
+      height: 25%;
+      i {
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .skills {
+    div {
+      small {
+        display: none;
+      }
+    }
+  }
+}
