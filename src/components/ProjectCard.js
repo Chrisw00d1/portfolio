@@ -17,7 +17,9 @@ React.useEffect(() => {
         )
       })}
       </div>
+      <div className='nameDiv'>
       <h3>{project.projectName}</h3>
+      </div>
       <hr />
       <div className='projectSkills'>
         {project.skills.map(skill => {
