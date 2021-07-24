@@ -159,3 +159,11 @@ hr {
     }
   }
 }
+
+@media not all and (min-resolution:.001dpcm) { 
+  @supports (-webkit-appearance:none) {
+    .imageContainer {
+      top: 100px;
+    }
+  }
+}

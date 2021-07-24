@@ -11,14 +11,15 @@
   overflow: visible;
   z-index: 1;
   img {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    object-fit: fill;
-    margin-right: 20px;
+    object-fit: cover;
+    object-position: 0 15%;
   }
   .aboutText {
     overflow: visible;
+    overflow-y: auto;
     height: 100%;
     width: 50%;
     text-align: center;
@@ -26,7 +27,28 @@
       margin-top: 0px;
       font-size: 40px;
     }
+    h2, p {
+      padding-right: 10px;
+    }
   }
+}
+
+.aboutText::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.aboutText::-webkit-scrollbar:vertical {
+  width: 11px;
+}
+
+.aboutText::-webkit-scrollbar:horizontal {
+  height: 11px;
+}
+
+.aboutText::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 2px solid whitesmoke;
+  background-color: whitesmoke;
 }
 
 @media screen and (max-width: 1000px), screen and (max-height: 530px) {
