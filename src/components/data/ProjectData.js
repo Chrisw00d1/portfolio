@@ -2,7 +2,7 @@ const projectData = [
   {
     projectId: 1,
     projectName: 'Battleships',
-    images: ['https://res.cloudinary.com/dqdugu41a/image/upload/v1627156996/Portfolio/battleships1_rrqwab.png', 'https://res.cloudinary.com/dqdugu41a/image/upload/v1627157004/Portfolio/battleships2_mutloh.png', 'https://res.cloudinary.com/dqdugu41a/image/upload/v1627157008/Portfolio/battleships3_dxlw5u.png'],
+    images: ['https://res.cloudinary.com/dqdugu41a/image/upload/v1627156996/Portfolio/battleships1_rrqwab.png', 'https://res.cloudinary.com/dqdugu41a/image/upload/v1627157004/Portfolio/battleships2_mutloh.png', 'https://res.cloudinary.com/dqdugu41a/image/upload/v1627402203/Portfolio/Screenshot_2021-07-27_at_17.09.32_gjadfz.png'],
     skills: ['devicon-html5-plain', 'devicon-css3-plain', 'devicon-javascript-plain', 'devicon-git-plain', 'devicon-github-original'],
     links: ['https://github.com/Chrisw00d1/battleships', 'https://chrisw00d1.github.io/battleships/'],
     description: 'My take on the board game Battleships. You battle against the computer to see who can sink their oppenents ships first! This was created using HTML, CSS and JavaScript.\nTime-frame: 1 week'

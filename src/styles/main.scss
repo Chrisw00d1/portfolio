@@ -19,7 +19,12 @@ html, body, div {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: black;
+  // background-color: rgb(143, 138, 138);
+  background-image: url(https://res.cloudinary.com/dqdugu41a/image/upload/v1627390766/Portfolio/norway_auto_x2_wyn8rz.jpg);
+  // background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0% 50%;
+
 }
 .content {
   display: flex;
@@ -38,7 +43,7 @@ html, body, div {
   justify-content: center;
   transition: all .5s ease-in-out;
   font-size: 30px;
-  background-color: #151515d9;
+  background-color: rgb(122, 120, 120);
   backdrop-filter: blur(4px);
   width: 100%;
   height: auto;
@@ -58,6 +63,8 @@ html, body, div {
     height: 92vh;
   }
 }
+
+
 
 @import 
 'background',

@@ -3,11 +3,14 @@
   z-index: 1;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   width: 70%;
   height: 40%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(13, 15, 38, 0.2);
   backdrop-filter: blur(3px);
   overflow: visible;
+  padding-top: 40px;
+  border-radius: 10px;
   div {
     width: 9%;
     height: 50%;
@@ -29,12 +32,18 @@
   }
 }
 
+.oslo {
+  background-image: url(https://res.cloudinary.com/dqdugu41a/image/upload/v1627387321/Portfolio/oslo_auto_x2_lxgxsx.jpg);
+  background-size: cover;
+  background-position: 0% 100%;
+}
+
 @media screen and (max-width: 900px) {
   .skills {
     width: 95%;
     height: 40%;
     div {
-      width: 20%;
+      width: 15%;
       height: 25%;
       i {
         font-size: 25px;
@@ -49,6 +58,9 @@
       small {
         display: none;
       }
+    }
+    div:hover {
+      transform: none;
     }
   }
 }
